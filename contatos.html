@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <script src="js/contatos.js"></script>
+    <link rel="stylesheet" href="./css/contatos.css">
+</head>
+<body>
+    <header>
+        <img class="logo-img" src="./img/LOGO header.png" alt="Logo Moda Online">
+        <nav class="menu">
+            <ul class="menu-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+                <li><a href="colaboradores.html">Colaboradores</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="product-title">CONTATOS</h1>
+        <section class="product-section-1">
+            <img class="product-img-1" src="img/contatos/logo whatsapp.png" alt="Logo whatsapp">
+            <h2 class="product-rede-social-1">WHATSAPP</h2>
+            <a class="product-btn-1" href="https://web.whatsapp.com/">Clique aqui!</a>
+        </section>
+        <section class="product-section-2">
+            <img class="product-img-2" src="img/contatos/logo instagram.png" alt="Logo instagram">
+            <h2 class="product-rede-social-2">INSTAGRAM</h2>
+            <a class="product-btn-2" href="https://web.whatsapp.com/">Clique aqui!</a>
+        </section>
+
+        <section class="container">
+        <form action="formulario.js"  id="form" method="post">
+            <section class="form">
+                <div>
+                    <p class="sub-title">Querido Cliente,</p>
+                    <p class="sub-title">Seu feedback é importante pra gente.</p>
+
+                </div>
+                <div>
+                <label for="nome">Nome</label>
+                <input type="text" placeholder="Digite seu nome" class="inputs required" oninput="nameValidate()">
+                <span class="span-required">Nome deve ter no mínimo 3 caracteres.</span>
+            </div>
+            <div>
+                <label for="emai">E-mail</label>
+                <input type="email" placeholder="Digite e-mail para contato" class="inputs required" oninput="emailValidate()">
+                <span class="span-required">Digite um email válido.</span>
+            </div>
+            <div>
+                <label for="avaliacao">Avaliação das Coleções</label>
+                <textarea name="avaliacao" placeholder="Conte para nós sua experiencia com as coleções"
+                id="avaliacao" name="" id=""></textarea>
+            </div>
+            <div>
+                <label for="sugestao">Sugestões para nossa Página</label>
+                <textarea name="avaliacao" placeholder="Ajude-nos a melhorar sua experiência"
+                id="sugestao" name="" id=""></textarea>
+            </div>
+            <div class="custom-checkbox">
+                <input id="checkbox-1" type="checkbox">
+                <label for="checkbox-1">Desejo receber notificaçõoes via e-mail.</label>
+            </div>
+
+
+            <button type="submit" id="Enviar" onclick="myFunction()">Enviar</button>
+
+
+            </section>
+        </form>      
+          </section> 
+    </main>
+    <footer>
+        <ul class="footer">
+         <li><a href="https://www.instagram.com/"><img class="footer-img" src="./img/contatos/Logo instagram.png"></a></li>
+         <li><a href="https://pt-br.facebook.com/"><img class="footer-img" src="./img/contatos/Logo facebook.png"></a></li>
+         <li><a href="https://x.com/i/flow/login?redirect_after_login=%2Fsearch"><img class="footer-img" src="./img/contatos/Logo twitter.png"></a></li>
+        </ul>
+    </footer>
+</body>
+<script type="text/javascript" src="js/formulario.js">
+    </script>
+<script src="js/enviar_form.js"></script>
+
+
+</html>
